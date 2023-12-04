@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: #684444;
+            color:antiquewhite;
+            font: normal 18pt Arial;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div name="MSG" id="msg">Clique em mim</div>
+
+    <script>
+
+        //armazena o objeto body na variável corpo
+        var corpo = window.document.body
+
+        //getElementsByTagName('p')[0] -> procura os elementos do documents pelo TagName e armazena na variável p1
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write(`Está escrito assim: ${p1.innerHTML}`)
+
+        //innerText apenas mostra o texto, sem formatações | innerHTML mostra o texto e mantém as formatações
+        document.write(`Teste innerText: ${p1.innerText} e ${p1.innerHTML}`)
+
+        //p1.style.color = 'blue'  -> formatação de cor do p1
+        //corpo.style.background = 'black' -> formatação do bg do corpo
+
+        //armazena o objeto que possui o id 'msg' na variável d
+        var d = document.getElementById('msg')
+
+        //Semelhante a selecionar por id
+        var d1 = document.getElementsByName('MSG')
+        d.style.background='green'
+
+        //div -> #| Classe -> .
+        //# -> id | . -> Class
+        var d2 = document.querySelector('div#msg')
+
+        //edição do texto da div com o id 'msg'
+        d.innerText='atumalaca'
+
+        
+        
+    </script>
+</body>
+</html>

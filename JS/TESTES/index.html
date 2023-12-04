@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Adicionar parágrafos e inputs em uma div</title>
+  </head>
+  <body>
+    <button id="myButton">Adicionar parágrafo e input</button>
+    <div id="myDiv"></div>
+    <br>
+    <button id="ordenar" onclick="ordenar()">Ordenar</button>
+    <p id="ordem"></p>
+    <script>
+        function roll(x){
+            return parseInt(Math.random()*x +1)
+        }
+
+        class Personagem {
+            constructor(nome,iniciativa){
+                this.nome = String(nome)
+                this.iniciativa = Number(iniciativa)
+            }
+        }
+    var num = 1
+    const ordem = []
+        function addParagraphAndInput() {
+            var personagem = new Personagem("Personagem: "+num, roll(5))
+            ordem.push({nome: personagem.nome, valor: personagem.iniciativa})
+
+            // Cria um novo parágrafo NOME
+            var pNome = document.createElement("p");
+            var pText = document.createTextNode(personagem.nome);
+            pNome.appendChild(pText);
+            pNome.id = "n"+num
+
+            // Cria um novo parágrafo INICIATIVA
+            var pINICIATIVA = document.createElement("p");
+            var pText = document.createTextNode(personagem.iniciativa);
+            pINICIATIVA.appendChild(pText);
+            pINICIATIVA.id = "i"+num
+
+            // Adiciona o novo parágrafo à div
+            var div = document.getElementById("myDiv");
+            div.appendChild(pNome);
+            div.appendChild(pINICIATIVA);
+
+            num++
+        }
+
+        function ordenar(){
+            ordem.sort(function(a, b) {
+             return b.valor - a.valor;
+            });
+            document.getElementById("ordem").innerText = ordem
+
+        }
+
+        // Adiciona um listener de evento ao botão
+        var button = document.getElementById("myButton");
+        button.addEventListener("click", addParagraphAndInput);
+    </script>
+  </body>
+</html>
