@@ -1,0 +1,23 @@
+body{
+    background-color: cornflowerblue;
+    font: normal 18pt Arial;
+    text-align: center;
+}
+
+header{
+    color:honeydew;
+}
+
+section{
+    background-color: honeydew;
+    width: 500pt;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+footer{
+    color:honeydew;
+    font-style: italic;
+}
