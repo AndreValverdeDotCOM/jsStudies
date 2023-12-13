@@ -1,0 +1,65 @@
+body {
+    font: normal 18pt Arial;
+    background-color: rgb(219, 155, 134);
+}
+
+header {
+    color: rgb(248, 239, 228);
+    text-align: center;
+}
+
+.container p{
+    display: flex;
+}
+
+.container input {
+    text-align: center;
+    font-size: 15pt;
+    position:relative;
+    width: 300pt;
+    margin-left: auto;
+    right: 12px;
+}
+
+section {
+    background-color: white;
+    width: 500pt;
+    margin: auto;
+    padding: 15px;
+    padding-left: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+input#btnVerificar {
+    font-weight: bold;
+    background-color: rgb(248, 239, 228);
+    color: rgba(239, 77, 23, 0.598);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 11px;
+    border-color: transparent;
+    font-size: 15pt;
+    height: 35px;
+    width: 492pt;
+    top: 62%;
+    margin: auto;
+}
+
+#btnVerificar:hover{
+    background-color: rgba(239, 77, 23, 0.598);
+    color: rgb(248, 239, 228);
+    border-color: rgba(0, 0, 0, 0.4);;
+}
+
+
+footer {
+    color: rgb(248, 239, 228);
+    text-align: center;
+}
+
+div#resposta {
+    color: crimson;
+    text-align: justify;
+    padding-bottom: 20px;
+}
