@@ -10,6 +10,7 @@ function calcular(){
         for(var i = 1; i<=10; i++){
             let item = document.createElement('option')
             item.text = `${n} X ${i} = ${n*i}`
+            item.value =`tab${i}`
             tab.appendChild(item)
         }
     }

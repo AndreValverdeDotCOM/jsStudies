@@ -10,7 +10,7 @@ vaga.push(7)
 vaga.length
 
 //Ordena em ordem crescente
-vaga.sort
+vaga.sort()
 
 //Índice do valor '4'
 vaga.indexOf(4)
