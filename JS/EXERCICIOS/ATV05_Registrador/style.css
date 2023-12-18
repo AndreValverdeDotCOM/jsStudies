@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(236, 239, 242);
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header {
+    color:rgb(173, 185, 204);
+}
+
+section {
+    color: rgb(173, 185, 204);
+    background-color: rgb(250, 251, 253);
+    width: 500pt;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    text-align: center;
+
+}
+
+div#pergunta{
+    display: flex;
+}
+
+input{
+    color:rgb(173, 185, 204);
+    border-width: 1px;
+    border-color:rgb(173, 185, 204);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input#txtNumero{
+    text-align: center;
+    font-size:x-large;
+    width: 300pt;
+    height: 17pt;
+}
+
+input#btn{
+    font-size:medium;
+    height: 20pt;
+    width: 110pt;
+}
+
+#btn:hover{
+    color: #ffffff;
+    border-color:#000;
+    background:rgb(173, 185, 204);
+}
+
+select{
+    text-align: center;
+    width: 100%;
+    font-size:large;
+    background: #c9c9c94b;
+    color:rgb(173, 185, 204);
+    border: #000;
+}
+
+footer {
+    color:rgb(173, 185, 204);
+    font-style: italic;
+}
+
+div {
+    padding: 9px;
+}
