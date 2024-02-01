@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Mini RPG</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+  <div class="game-container">
+    
+    <div class="start-menu">
+      <button id="new-game-btn">play</button>
+    </div>
+    
+    <div class="hero-info-container hide">
+      <div class="adventure-ticker">Adventures completed: 0</div>
+      <button id="random-hero-btn">random</button>
+      <button id="adventure-btn" class="invisible">adventure</button>
+      <div class="info-box-wrapper">
+        <div class="hero-info info-main show"></div>
+        <div class="hero-info info-attr show"></div>
+      </div>
+      <button id="hero-info-back-btn">back</button>
+    </div>
+    
+    <div class="battle-container hide">
+      <button id="start-battle-btn">start battle</button>
+      <div class="battle-area">
+        <div class="hero-battle-info"></div>
+        <div class="enemy-info"></div>
+      </div>
+      <div class="battle-text"></div>
+      <button id="battle-loot-btn">Loot</button>
+    </div>
+    
+    <div class="inn-container hide">
+      WELCOME TO THE INN
+      <div class="inn-text"></div>
+      <button id="inn-to-hero-info-btn">Back</button>
+    </div>
+    
+    <div class="loot-container hide">
+      <div class="loot-text"></div>
+      <button id="take-equip-btn">take equipment</button>
+      <button id="discard-equip-btn" class="inline-block-btn">throw away</button>
+      <div class="loot-div"></div>
+      <button id="loot-to-hero-info-btn" class="hide">to hero info</button>
+    </div>
+    
+    <div class="trainer-container hide">
+      <div class="trainer-text">SKILL TRAINER</div>
+      <div class="trainer-text-box">The skill trainer has upgraded your skill!</div>
+      <div class="skill-trainer-box"></div>
+      <button id="trainer-to-hero-info-btn">to hero info</button>
+    </div>
+    
+    <div class="shop-container hide">
+      MERCHANT
+      <div class="merchant-text">Browse through the merchant's wares.</div>
+      <div class="shop-item-box"></div>
+      <button id="shop-to-hero-info-btn">to hero info</button>
+    </div>
+        
+  </div>
+  
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+  <script src="scripts/wiki.js"></script>
+  <script src="scripts/items.js"></script>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/heroinfo.js"></script>
+  <script src="scripts/battle.js"></script>
+  
+  
+</body>
+</html>

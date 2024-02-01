@@ -1,0 +1,216 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+
+ body {
+    background: #f5f5f5;
+    margin: 0;
+  }
+  
+  button {
+    // Remove styling and changing look
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    display: block;
+    margin: auto;
+    &:hover {
+      background-color: #77f;
+    }
+  }
+  
+  .inline-block-btn {
+    display: inline-block;
+  }
+  
+  .hide {
+    display: none;
+    border: 0;
+  }
+  .show {
+    display: inline-block;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+  .game-container {
+    width: 100vw;
+    background-color: #2a2;
+    .start-menu {
+      width:100%;
+      height: 100vh;
+    }
+  }
+  .adventure-ticker {
+    color: white;
+  }
+  .hero-info-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    .info-box-wrapper {
+      margin: 10px auto;
+      display: inline-block;
+    }
+    .hero-info {
+      display: inline-block;
+      vertical-align: top;
+      border: 2px solid white;
+      border-radius: 4px;
+      padding: 0 5px;
+      &.info-main, &.info-attr {
+        background-color: #ccc;
+        border: 2px solid white;
+        border-radius: 4px;
+      }
+      &.info-skill {
+        background-color: #b66;
+      }
+      img {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+      }
+    }
+  }
+  
+  .item-box {
+    margin: 8px auto;
+    padding: 4px 0;
+    width: 110px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  
+  .battle-container {
+    //background-color: #00f;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    .battle-area {
+      text-align: center;
+      color: white;
+      width: 400px;
+      padding: 0;
+      margin: auto;
+      #hp-bar {
+        margin: auto;
+        background-color: white;
+        width: 50%;
+      }
+      .enemy-info {
+        width: 50%;
+        float: right;
+      }
+      .hero-battle-info {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+    .battle-text {
+      background-color: white;
+      border: 2px solid white;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 5px auto;
+      white-space: pre;
+      min-width: 100px;
+    }
+  }
+  
+  .loot-container {
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    color: black;
+    text-align: center;
+
+    .loot-text {
+      background-color: white;
+      border: 2px solid white;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 5px auto 5px auto;
+    }
+  }
+  
+  .inn-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #aa5;
+    color: white;
+    text-align: center;
+  }
+  
+  .trainer-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #b66;
+    color: white;
+    text-align: center;
+    .hero-info {
+      margin: 10px 0;
+      display: inline-block;
+      vertical-align: top;
+      border: 2px solid white;
+      border-radius: 4px;
+      padding: 0 5px;
+    }
+  }
+  
+  .shop-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #cb5;
+    color: white;
+    text-align: center;
+    .hero-info {
+      color: black;
+      display: inline-block;
+      vertical-align: top;
+      border: 2px solid white;
+      border-radius: 4px;
+      padding: 0 5px;
+      margin: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
+  
+  
+  .fainted {
+    filter: grayscale(100%) brightness(0.25);
+  }
+  
+  .text-box {
+    font-size: 12px;
+  }
+  .title-box {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .common {
+    background-color: #CCC;
+  }
+  .uncommon {
+    background-color: #9C9;
+  }
+  .rare {
+    background-color: #99E;
+  }
+  .epic {
+    background-color: #B97;
+  }
+  
