@@ -1,0 +1,1 @@
+this.getField("mod").value = parseInt((this.getField("atributo").value - 10) / 2)
